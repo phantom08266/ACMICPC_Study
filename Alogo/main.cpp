@@ -15,6 +15,7 @@
 #include "Permutation/ex10971.h"
 #include "Permutation/ex6603.h"
 #include "Permutation/ex14888.h"
+#include "Permutation/ex1759.h"
 
 using namespace ex10430;
 using namespace ex2609;
@@ -33,6 +34,7 @@ using namespace ex10819;
 using namespace ex10971;
 using namespace ex6603;
 using namespace ex14888;
+using namespace ex1759;
 
 int main()
 {
@@ -52,7 +54,8 @@ int main()
 	//ex10819_Run();
 	//ex10971_Run();
 	//ex6603_Run();
-	ex14888_Run();
+	//ex14888_Run();
+	ex1759_Run();
 
 	return 0;
 }
