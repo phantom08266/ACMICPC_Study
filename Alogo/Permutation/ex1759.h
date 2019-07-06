@@ -39,6 +39,7 @@ namespace ex1759
 		}
 		return success;
 	}
+
 	void ex1759_Run()
 	{
 		int l, c;
@@ -64,7 +65,7 @@ namespace ex1759
 			index.push_back(1);
 		}
 		vector<vector<char>> data;
-		
+
 		bool check;
 		do
 		{
@@ -84,7 +85,7 @@ namespace ex1759
 			}
 		} while (next_permutation(index.begin(), index.end()));
 
-		
+
 		for (vector<vector<char>>::reverse_iterator rd = data.rbegin(); rd != data.rend(); rd++)
 		{
 			for (vector<char>::iterator riter = rd->begin(); riter != rd->end(); riter++)
@@ -93,5 +94,62 @@ namespace ex1759
 			}
 			cout << "\n";
 		}
+	}
+
+	void Loop(int index, int l, vector<char> pwd, vector<char> lockVector)
+	{
+		int pwdSize = pwd.size();
+		if (l == pwdSize) //탈출조건
+		{
+			int vowelsCount = 0;
+			int noVowelsCount = 0;
+			for (char v : pwd)
+			{
+				if (v == 'a' || v == 'e' || v == 'i' || v == 'o' || v == 'u')
+				{
+					vowelsCount++;
+				}
+				else
+				{
+					noVowelsCount++;
+				}
+			}
+			if (vowelsCount >= 1 && noVowelsCount >= 2)
+			{
+				for (int i = 0; i < l; i++)
+				{
+					cout << pwd[i];
+				}
+				cout << "\n";
+			}
+			return;
+		}
+		int lockSize = lockVector.size();
+		if (index >= lockSize) // 불가능한 경우
+		{
+			return;
+		}
+		pwd.push_back(lockVector[index]);
+		Loop(index + 1, l, pwd, lockVector);
+		pwd.pop_back();
+		Loop(index + 1, l, pwd, lockVector);
+	}
+
+	void ex1759_Run2()
+	{
+		int l, c;
+		cin >> l >> c;
+
+		vector<char> lock;
+		for (int i = 0; i < c; i++)
+		{
+			char value;
+			cin >> value;
+			lock.push_back(value);
+		}
+		sort(lock.begin(), lock.end());
+
+		vector<char> temp;
+		Loop(0, l, temp,lock);
 	}
 }
