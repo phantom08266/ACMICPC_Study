@@ -62,7 +62,8 @@ int main()
 	//ex6603_Run();
 	//ex14888_Run();
 	//ex1759_Run();
-	ex1759_Run2();
+	//ex1759_Run2();
+	ex1759_Run3();
 	//ex1182_Run();
 	//ex14501_Run();
 
