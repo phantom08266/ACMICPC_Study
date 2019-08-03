@@ -12,7 +12,7 @@ namespace ex1260
 	vector<int> node[1001];
 	bool bUsed[1001];
 
-	void DSP(int startNode)
+	void DFS(int startNode)
 	{
 		bUsed[startNode] = true;
 		cout << startNode << " ";
@@ -22,7 +22,7 @@ namespace ex1260
 			int nextNode = node[startNode][i];
 			if (bUsed[nextNode] == false)
 			{
-				DSP(nextNode);
+				DFS(nextNode);
 			}
 		}
 	}
@@ -65,7 +65,7 @@ namespace ex1260
 		{
 			sort(node[i].begin(), node[i].end());
 		}
-		DSP(s);
+		DFS(s);
 		cout << "\n";
 		memset(bUsed, false, sizeof(bUsed));
 		BFS(s);
