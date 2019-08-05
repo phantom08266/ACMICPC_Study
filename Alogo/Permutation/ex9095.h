@@ -27,19 +27,19 @@ namespace ex9095
 		}
 		return count;
 	}
-	//nì€ ëª©í‘œê°’
+	//nÀº ¸ñÇ¥°ª
 	int SumSameValue2(int n, int sum)
 	{
 		int count = 0;
-		if (n < sum) // ë¶ˆê°€ëŠ¥ ê²½ìš°ì˜ ìˆ˜
+		if (n < sum) // ºÒ°¡´É °æ¿ìÀÇ ¼ö
 		{
 			return 0;
 		}
-		if (n == sum) // íƒˆì¶œì¡°ê±´
+		if (n == sum) // Å»ÃâÁ¶°Ç
 		{
 			return 1;
 		}
-		for (int i = 1; i <= 3; i++) // ë‹¤ìŒ ê²½ìš°ì˜ ìˆ˜
+		for (int i = 1; i <= 3; i++) // ´ÙÀ½ °æ¿ìÀÇ ¼ö
 		{
 			count += SumSameValue2(n, sum + i);
 		}

@@ -9,10 +9,10 @@ namespace ex6603
 	{
 		int k;
 		const int MAX_K_Count = 12;
-#pragma region ë°©ë²• 1
-		//ì¼ë‹¨ ì´ ë°©ë²•ì€ ë™ì¼í•œ ê°’ì„ next_permutationì´ ì²˜ë¦¬í•  ìˆ˜ ìˆëŠ”ê±¸ ì•„ëŠëƒ ê°™ìŒ.
-		//ê·¸ë¦¬ê³  next_permutationì€ ì˜¤ë¦„ì°¨ìˆœë§Œ ë˜ëŠ”ë“¯ í•¨. í•˜ì—¬ ë²¡í„°ë¡œ ì²˜ë¦¬í•´ì„œ 
-		//ë‚˜ì¤‘ì— sortì•Œê³ ë¦¬ì¦˜ì„ í†µí•´ í•´ê²°í•´ì•¼ ë  ê²ƒìœ¼ë¡œ íŒë‹¨.
+#pragma region ¹æ¹ı 1
+		//ÀÏ´Ü ÀÌ ¹æ¹ıÀº µ¿ÀÏÇÑ °ªÀ» next_permutationÀÌ Ã³¸®ÇÒ ¼ö ÀÖ´Â°É ¾Æ´À³Ä °°À½.
+		//±×¸®°í next_permutationÀº ¿À¸§Â÷¼ø¸¸ µÇ´Âµí ÇÔ. ÇÏ¿© º¤ÅÍ·Î Ã³¸®ÇØ¼­ 
+		//³ªÁß¿¡ sort¾Ë°í¸®ÁòÀ» ÅëÇØ ÇØ°áÇØ¾ß µÉ °ÍÀ¸·Î ÆÇ´Ü.
 		/*
 		int s[MAX_K_Count];
 		int sIndex[MAX_K_Count];
@@ -60,7 +60,7 @@ namespace ex6603
 		}*/
 #pragma endregion
 
-#pragma region ë°©ë²• 2
+#pragma region ¹æ¹ı 2
 		vector<int> s;
 		vector<int> sIndex;
 

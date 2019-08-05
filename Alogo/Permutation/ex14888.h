@@ -35,7 +35,7 @@ namespace ex14888
 		int max = -1000000000;
 		int min = 1000000000;
 		int calc = 0;
-		//ìŒìˆ˜ë¥¼ ë‚˜ëˆŒë•Œ C++14ì²˜ëŸ¼ , ë‚˜ëˆŒë•Œ ëª©ë§Œ ë‚˜ì˜¤ë„ë¡
+		//À½¼ö¸¦ ³ª´­¶§ C++14Ã³·³ , ³ª´­¶§ ¸ñ¸¸ ³ª¿Àµµ·Ï
 		do
 		{
 			calc = value[0];

@@ -99,7 +99,7 @@ namespace ex1759
 	void Loop(int index, int l, vector<char> pwd, vector<char> lockVector)
 	{
 		int pwdSize = pwd.size();
-		if (l == pwdSize) //íƒˆì¶œì¡°ê±´
+		if (l == pwdSize) //Å»ÃâÁ¶°Ç
 		{
 			int vowelsCount = 0;
 			int noVowelsCount = 0;
@@ -125,7 +125,7 @@ namespace ex1759
 			return;
 		}
 		int lockSize = lockVector.size();
-		if (index >= lockSize) // ë¶ˆê°€ëŠ¥í•œ ê²½ìš°
+		if (index >= lockSize) // ºÒ°¡´ÉÇÑ °æ¿ì
 		{
 			return;
 		}
@@ -137,7 +137,7 @@ namespace ex1759
 
 	void Loop2(string lockArray, int l, int index, string temp)
 	{
-		//íƒˆì¶œì¡°ê±´
+		//Å»ÃâÁ¶°Ç
 		int size = temp.size();
 		if (l == size)
 		{
@@ -161,7 +161,7 @@ namespace ex1759
 			}
 			return;
 		}
-		//ë¶ˆê°€ëŠ¥í•œ ì¡°ê±´
+		//ºÒ°¡´ÉÇÑ Á¶°Ç
 		if (index >= lockArray.size())
 		{
 			return;
