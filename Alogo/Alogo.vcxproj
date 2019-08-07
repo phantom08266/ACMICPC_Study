@@ -121,13 +121,13 @@
     <ClInclude Include="BaseInclude.h" />
     <ClInclude Include="Graph\ex11724.h" />
     <ClInclude Include="Graph\ex1260.h" />
+    <ClInclude Include="Graph\ex2667.h" />
     <ClInclude Include="Math\ex10430.h" />
     <ClInclude Include="Math\ex1929.h" />
     <ClInclude Include="Math\ex1934.h" />
     <ClInclude Include="Math\ex1978.h" />
     <ClInclude Include="Math\ex2609.h" />
     <ClInclude Include="Math\ex9613.h" />
-    <ClInclude Include="N &amp; M\ex15649.h" />
     <ClInclude Include="Permutation\ex10819.h" />
     <ClInclude Include="Permutation\ex10971.h" />
     <ClInclude Include="Permutation\ex10972.h" />
@@ -135,12 +135,12 @@
     <ClInclude Include="Permutation\ex10974.h" />
     <ClInclude Include="Permutation\ex1182.h" />
     <ClInclude Include="Permutation\ex14500.h" />
-    <ClInclude Include="Permutation\ex14501.h" />
     <ClInclude Include="Permutation\ex1476.h" />
     <ClInclude Include="Permutation\ex14888.h" />
     <ClInclude Include="Permutation\ex1759.h" />
     <ClInclude Include="Permutation\ex2309.h" />
     <ClInclude Include="Permutation\ex6603.h" />
+    <ClInclude Include="Permutation\ex9095.h" />
     <ClInclude Include="StopWatch.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
